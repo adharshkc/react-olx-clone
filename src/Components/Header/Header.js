@@ -11,12 +11,12 @@ function Header() {
     <div className="headerParentDiv">
       <div className="headerChildDiv">
         <div className="brandName">
-          <OlxLogo></OlxLogo>
+          <OlxLogo />
         </div>
         <div className="placeSearch">
-          <Search></Search>
+          <Search />
           <input type="text" />
-          <Arrow></Arrow>
+          <Arrow />
         </div>
         <div className="productSearch">
           <div className="input">
@@ -31,7 +31,7 @@ function Header() {
         </div>
         <div className="language">
           <span> ENGLISH </span>
-          <Arrow></Arrow>
+          <Arrow />
         </div>
         <div className="loginPage">
           <span>Login</span>
@@ -39,9 +39,9 @@ function Header() {
         </div>
 
         <div className="sellMenu">
-          <SellButton></SellButton>
+          <SellButton />
           <div className="sellMenuContent">
-            <SellButtonPlus></SellButtonPlus>
+            <SellButtonPlus />
             <span>SELL</span>
           </div>
         </div>
