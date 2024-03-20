@@ -2,17 +2,19 @@ import React from 'react';
 
 import Heart from '../../assets/Heart';
 import './Post.css';
+import { Link } from 'react-router-dom';
 
 function Posts() {
 
   return (
     <div className="postParentDiv">
-      <div className="moreView">
-        <div className="heading">
+      
+        {/* <div className="heading">
           <span>Quick Menu</span>
           <span>View more</span>
-        </div>
-        <div className="cards">
+        </div> */}
+        {/* <div className="cards">
+          
           <div
             className="card"
           >
@@ -31,8 +33,8 @@ function Posts() {
               <span>Tue May 04 2021</span>
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+      
       <div className="recommendations">
         <div className="heading">
           <span>Fresh recommendations</span>
