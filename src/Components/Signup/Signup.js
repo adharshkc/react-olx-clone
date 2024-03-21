@@ -32,7 +32,7 @@ export default function Signup() {
       navigate('/')
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
-        setError("Email address is already in use. Please sign in with a different account.");
+        setError("Email exists.");
       }
     }
   }
