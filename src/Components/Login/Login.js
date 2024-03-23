@@ -5,17 +5,19 @@ import './Login.css';
 import { Link } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../Config/firebase-config';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
+  const navigate = useNavigate()
 
   const signin = async (e)=>{
     e.preventDefault()
     try {
       const user = await signInWithEmailAndPassword(auth, email, password)
-      
+      navigate('/')
     } catch (error) {
       console.log(error, "error")
       setError("invalid user")
